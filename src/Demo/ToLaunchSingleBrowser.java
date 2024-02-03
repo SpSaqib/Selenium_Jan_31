@@ -21,7 +21,7 @@ public class ToLaunchSingleBrowser {
 			String src = driver.getPageSource();
 			System.out.println(src);
 			driver.manage().deleteAllCookies();
-			driver.quit();			
+	//		driver.quit();			
 	}
 
 }
