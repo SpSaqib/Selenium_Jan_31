@@ -18,7 +18,7 @@ public class CSS_Selectors1 {
 		driver.findElement(By.cssSelector("input[placeholder='Email address or phone number']")).sendKeys("Saqib");
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("input[placeholder='Password']")).sendKeys("Hello@123");
-		driver.quit();
+	//	driver.quit();
 	}
 
 }
