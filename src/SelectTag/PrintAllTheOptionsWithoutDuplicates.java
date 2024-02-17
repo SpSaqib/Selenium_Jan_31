@@ -34,6 +34,7 @@ public class PrintAllTheOptionsWithoutDuplicates {
 		
 		HashSet<String> hs=new HashSet<>();
 		
+		//Without Duplicates
 		for(WebElement option:allOptions)
 		{
 			String text = option.getText();
