@@ -7,6 +7,7 @@ public class CreateFile {
 
 	public static void main(String[] args) throws IOException {
 		
+		//Creating a file
 		File f=new File("E:\\File Handling\\FirstFile.txt");
 		
 		if(f.createNewFile())

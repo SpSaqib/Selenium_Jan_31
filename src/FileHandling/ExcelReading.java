@@ -18,13 +18,20 @@ public class ExcelReading
 		FileInputStream f = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\Selenium_Practice_Janaury_2024\\Book1.xlsx");
 			Workbook wb = WorkbookFactory.create(f);
 	        Sheet s = wb.getSheet("Sheet1");
-	        Row r = s.getRow(2);
+	        Row r = s.getRow(1);
 	        Cell c =r.getCell(1);
 	        String data = c.toString();
 	        System.out.println(data);
+	        
+	        Sheet s1 = wb.getSheet("Sheet1");
+	        Row r1 = s1.getRow(0);
+	        Cell c1 =r1.getCell(1);
+	        String data1 = c.toString();
+	        System.out.println(data1);
 	        //or
-	        String data2 = WorkbookFactory.create(f).getSheet("Sheet1").getRow(1).getCell(1).toString();
-	        System.out.println(data2);
+//	        String data2 = WorkbookFactory.create(f).getSheet("Sheet1").getRow(1).getCell(1).toString();
+//	        System.out.println(data2);
+	      
 		
 	}
 }
